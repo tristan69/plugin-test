@@ -12,8 +12,8 @@ echosuccess = function (data) {
 	Console.log("OK : " + data)
 }
 
-echosuccess = function (data) {
-	Console.log("OK : " + data)
+echoerror = function (data) {
+	Console.log("PAS OK : " + data)
 }
 
 module.exports = Echo;
