@@ -21,13 +21,13 @@ module.exports = Echo;
 
 function initial(){
     var coucou = "coucou";
-    cordova.exec(sayHelloSuccess, sayHelloFailure, "Echo", "echo", [coucou]);
+    cordova.exec(echoSuccess, echoFailure, "Echo", "echo", [coucou]);
 }
 
-function sayHelloSuccess(data){
+function echoSuccess(data){
     alert("OK: " + data);
 }
 
-function sayHelloFailure(data){
+function echoFailure(data){
     alert("FAIL: " + data);
 }

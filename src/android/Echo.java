@@ -33,7 +33,6 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
         return false;
     }
-}
 /*
 private void echo(String message, CallbackContext callbackContext) {
     if (message != null && message.length() > 0) {
