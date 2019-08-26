@@ -20,6 +20,7 @@ public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     if (action.equals("echo")) {
         String message = args.getString(0);
+		Sytem.out.print("Message : " + message);
         this.echo(message, callbackContext);
         return true;
     }
