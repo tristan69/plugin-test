@@ -1,5 +1,5 @@
 /*global cordova, module*/
-/*
+
 var exec = require('cordova/exec');
 
 var Echo = function () {};
@@ -8,16 +8,17 @@ Echo.echo = function () {
     exec(echosuccess, echoerror, "Echo", "echo", ["coucou"]);
 };
 
-function echosuccess(data) {
-	Alert("OK : " + data)
+echosuccess = function (data) {
+	Console.log("OK : " + data)
 }
 
-function echoerror (data) {
-	Alert("PAS OK : " + data)
+echosuccess = function (data) {
+	Console.log("OK : " + data)
 }
 
 module.exports = Echo;
-*/
+
+/*
 
 function initial(){
     var coucou = "coucou";
@@ -31,3 +32,5 @@ function echoSuccess(data){
 function echoFailure(data){
     alert("FAIL: " + data);
 }
+
+*/
