@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
+        id="com.example.echo"
         version="0.7.0">
 
-    <name>Hello</name>
+    <name>Echo</name>
 
     <engines>
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <asset src="www/hello.js" target="js/hello.js"/>
+    <asset src="www/echo.js" target="js/echo.js"/>
 
-    <js-module src="www/hello.js" name="Hello">
-        <clobbers target="Hello" />
+    <js-module src="www/echo.js" name="Echo">
+        <clobbers target="Echo" />
     </js-module>
 
+	<platform name="android">
+		<config-file target="config.xml" parent="/*">
+			<feature name="Echo">
+				<param name="android-package" value="org.apache.cordova.plugin.Echo"/>
+			</feature>
+		</config-file>
 
-
-    <platform name="ios">
-
-        <config-file target="config.xml" parent="/widget">
-            <feature name="Hello">
-                <param name="ios-package" value="HWPHello" />
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-        <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
-    </platform>
-
+		<source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
+	</platform>
 
 </plugin>

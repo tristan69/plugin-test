@@ -1,5 +1,5 @@
 {
-  "name": "plugin-hello-cordova",
+  "name": "plugin-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbenfriha/plugin-hello-cordova.git"
+    "url": "git+https://github.com/tristan69/plugin-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mbenfriha/plugin-hello-cordova/issues"
+    "url": "https://github.com/tristan69/plugin-test/issues"
   },
-  "homepage": "https://github.com/mbenfriha/plugin-hello-cordova#readme"
+  "homepage": "https://github.com/tristan69/plugin-test#readme"
 }
