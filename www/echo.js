@@ -5,7 +5,7 @@ var exec = require('cordova/exec');
 var Echo = function () {};
 
 Echo.echo = function () {
-    exec(null, null, "Echo", "echo", ["coucou"]);
+    exec(success, error, "Echo", "echo", ["coucou"]);
 };
 
 module.exports = Echo;

@@ -16,13 +16,12 @@ public class Echo extends CordovaPlugin {
 public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     if (action.equals("echo")) {
         String message = args.getString(0);
-		System.out.print("Message : " + message);
-        //this.echo(message, callbackContext);
+        this.echo(message, callbackContext);
         return true;
     }
     return false;
 }
-/*
+
 private void echo(String message, CallbackContext callbackContext) {
     if (message != null && message.length() > 0) {
         callbackContext.success(message);
@@ -30,5 +29,5 @@ private void echo(String message, CallbackContext callbackContext) {
         callbackContext.error("Expected one non-empty string argument.");
     }
 }
-*/
+
 }
