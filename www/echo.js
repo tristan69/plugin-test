@@ -4,8 +4,8 @@ var exec = require('cordova/exec');
 
 var Echo = function () {};
 
-Echo.echo = function () {
-    exec(echosuccess, echoerror, "Echo", "echo", ["coucou"]);
+Echo.echo = function (message) {
+    exec(echosuccess, echoerror, "Echo", "echo", [message]);
 };
 
 echosuccess = function (data) {

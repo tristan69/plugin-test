@@ -1,17 +1,13 @@
 {
   "name": "plugin-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "plugin test pour android",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tristan69/plugin-test.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "tristan",
   "bugs": {
     "url": "https://github.com/tristan69/plugin-test/issues"
   },
