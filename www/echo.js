@@ -17,20 +17,3 @@ echoerror = function (data) {
 }
 
 module.exports = Echo;
-
-/*
-
-function initial(){
-    var coucou = "coucou";
-    cordova.exec(echoSuccess, echoFailure, "Echo", "echo", [coucou]);
-}
-
-function echoSuccess(data){
-    alert("OK: " + data);
-}
-
-function echoFailure(data){
-    alert("FAIL: " + data);
-}
-
-*/
