@@ -9,11 +9,11 @@ Echo.echo = function () {
 };
 
 echosuccess = function (data) {
-	Console.log("OK : " + data)
+	Alert("OK : " + data)
 }
 
 echoerror = function (data) {
-	Console.log("PAS OK : " + data)
+	Alert("PAS OK : " + data)
 }
 
 module.exports = Echo;
