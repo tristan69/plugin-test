@@ -7,16 +7,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
-* This class echoes a string called from JavaScript.
-*/
 public class Echo extends CordovaPlugin {
 
 @Override
 public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		if (action.equals("echo")){
 		try {
-			String responseText = "Hello world, " + args.getString(0);
+			String responseText = "Echo world, " + args.getString(0);
 			callbackContext.success(responseText);
 		} catch (JSONException e){
 			callbackContext.error("Failed to parse parameters");
@@ -25,6 +22,8 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
         return false;
     }
+}
+
 /*
 private void echo(String message, CallbackContext callbackContext) {
     if (message != null && message.length() > 0) {
@@ -34,4 +33,3 @@ private void echo(String message, CallbackContext callbackContext) {
     }
 }
 */
-}

@@ -1,8 +1,7 @@
 {
   "name": "plugin-test",
   "version": "1.0.0",
-  "description": "plugin test pour android",
-  "main": "index.js",
+  "description": "plugin cordova de test pour android sous Neptune",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tristan69/plugin-test.git"
