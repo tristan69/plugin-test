@@ -8,6 +8,6 @@ Echo.echo = function (message) {
 
 echoSuccess = function () {}
 
-echoError = function () {
-	
+echoError = function () {}
+
 module.exports = Echo;
