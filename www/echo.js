@@ -1,6 +1,6 @@
 var exec = require('cordova/exec');
 
-var echo = function (message) {
+var Echo = function (message) {
     exec(echoSuccess, echoError, "Echo", "echo", [message]);
 };
 
@@ -12,4 +12,4 @@ echoError = function (data) {
 	window.alert("PAS OK : " + data)
 }
 
-module.exports = echo;
+module.exports = Echo;

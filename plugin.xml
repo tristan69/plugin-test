@@ -11,7 +11,7 @@
 
     <asset src="www/echo.js" target="js/echo.js"/>
 
-    <js-module src="www/echo.js" name="Echo">
+    <js-module name="Echo" src="www/echo.js">
         <clobbers target="Echo" />
     </js-module>
 
