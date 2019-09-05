@@ -9,8 +9,6 @@
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <asset src="www/echo.js" target="js/echo.js"/>
-
     <js-module name="Echo" src="www/echo.js">
         <clobbers target="Echo" />
     </js-module>
@@ -18,7 +16,7 @@
 	<platform name="android">
 		<config-file target="config.xml" parent="/*">
 			<feature name="Echo">
-				<param name="android-package" value="org.apache.cordova.plugin.Echo" onload="true"/>
+				<param name="android-package" value="org.apache.cordova.plugin.Echo"/>
 			</feature>
 		</config-file>
 
