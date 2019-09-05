@@ -9,4 +9,5 @@ Echo.echo = function (message) {
 echoSuccess = function (data) {}
 
 echoError = function (data) {
+	
 module.exports = Echo;
