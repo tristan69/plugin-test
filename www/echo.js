@@ -12,4 +12,4 @@ echoError = function (data) {
 	window.alert("PAS OK : " + data)
 }
 
-module.exports = Echo;
+module.exports = echo;
