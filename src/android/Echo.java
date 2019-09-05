@@ -23,23 +23,3 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
         return false;
     }
 }
-
-/*
-private void echo(String message, CallbackContext callbackContext) {
-    if (message != null && message.length() > 0) {
-        callbackContext.success(message);
-    } else {
-        callbackContext.error("Expected one non-empty string argument.");
-    }
-}
-
-private void show(String msg, CallbackContext callbackContext) {
-	if (msg == null || msg.length() == 0) {
-		callbackContext.error("Empty message!");
-	} else {
-		Toast.makeText(webView.getContext(), msg, Toast.LENGTH_LONG).show();
-		callbackContext.success(msg);
-	}
-}
-
-*/
