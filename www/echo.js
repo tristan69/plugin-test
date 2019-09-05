@@ -6,8 +6,12 @@ Echo.echo = function (message) {
     exec(echoSuccess, echoError, "Echo", "echo", [message]);
 };
 
-echoSuccess = function () {};
+echoSuccess = function (data) {
+	window.alert("OK : " + data)
+}
 
-echoError = function () {};
+echoError = function (data) {
+	window.alert("PAS OK : " + data)
+}
 
 module.exports = Echo;
