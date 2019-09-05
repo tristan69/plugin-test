@@ -32,4 +32,14 @@ private void echo(String message, CallbackContext callbackContext) {
         callbackContext.error("Expected one non-empty string argument.");
     }
 }
+
+private void show(String msg, CallbackContext callbackContext) {
+	if (msg == null || msg.length() == 0) {
+		callbackContext.error("Empty message!");
+	} else {
+		Toast.makeText(webView.getContext(), msg, Toast.LENGTH_LONG).show();
+		callbackContext.success(msg);
+	}
+}
+
 */
