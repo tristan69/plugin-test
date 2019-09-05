@@ -6,8 +6,8 @@ Echo.echo = function (message) {
     exec(echoSuccess, echoError, "Echo", "echo", [message]);
 };
 
-echoSuccess = function (data) {}
+echoSuccess = function () {}
 
-echoError = function (data) {
+echoError = function () {
 	
 module.exports = Echo;
