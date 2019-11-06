@@ -33,7 +33,7 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		if (action.equals("test")){
 		try {
 			ModbusTCPMaster master;
-			String responseText = "Test ok, ";
+			String responseText = "Test ok";
 			callbackContext.success(responseText);
 		} catch (JSONException e){
 			callbackContext.error("Test fail");
