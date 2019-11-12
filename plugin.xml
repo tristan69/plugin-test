@@ -135,7 +135,9 @@
 		<source-file src="src/android/util/Observable.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/util/Observer.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/util/SerialParameters.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/ThreadPool.java" target-dir="src/org/apache/cordova/plugin" />			
+		<source-file src="src/android/util/ThreadPool.java" target-dir="src/org/apache/cordova/plugin" />	
+		<source-file src="src/resources/log4j.properties" target-dir="src/org/apache/cordova/plugin" />	
+				
 		
 	</platform>
 	
