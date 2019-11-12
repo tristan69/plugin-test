@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.ghgande.j2mod.modbus.facade;
 
 public class Echo extends CordovaPlugin {
 	
