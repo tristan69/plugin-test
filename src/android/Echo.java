@@ -24,8 +24,6 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		
 		if (action.equals("test")){
 		try {
-			// master = new ModbusTCPMaster(<address>);  // Uses port 502 and a timeout of 3000ms
-			// master = new ModbusTCPMaster(<address>, <port>); // Uses a timeout of 3000ms
 			String connectionString = args.getString(0);
 			master = new ModbusTCPMaster(connectionString);
 			master.connect();
