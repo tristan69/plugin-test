@@ -26,14 +26,13 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		try {
 			// master = new ModbusTCPMaster(<address>);  // Uses port 502 and a timeout of 3000ms
 			// master = new ModbusTCPMaster(<address>, <port>); // Uses a timeout of 3000ms
-			connectionString = args.getString(0);
+			String connectionString = args.getString(0);
 			master = new ModbusTCPMaster(connectionString);
 			master.connect();
 			callbackContext.success("Connected ..");
 		}
 		catch (Exception e) {
-			logger.error("Cannot connect to slave - %s", e.getMessage());
-			callbackContext.error("Cannot connect");
+			callbackContext.error("Cannot connect " + e.getMessage());
 		}
 		return true;
 		}
