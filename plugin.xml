@@ -22,14 +22,16 @@
 
 		<source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
 		<!-- <source-file src="src/resources/log4j.properties" target-dir="src/org/apache/cordova/plugin" />	 -->
-		<source-file src="src/android/libs/j2mod-2.5.5.jar" target-dir="src/org/apache/cordova/plugin" />	
-		<source-file src="src/android/libs/jSerialComm-2.5.1.jar" target-dir="src/org/apache/cordova/plugin" />	
-		<source-file src="src/android/libs/slf4j-api-1.7.21.jar" target-dir="src/org/apache/cordova/plugin" />	
+		<!-- <source-file src="src/android/libs/j2mod-2.5.5.jar" target-dir="src/org/apache/cordova/plugin" />	 -->
+		<!-- <source-file src="src/android/libs/jSerialComm-2.5.1.jar" target-dir="src/org/apache/cordova/plugin" />	 -->
+		<!-- <source-file src="src/android/libs/slf4j-api-1.7.21.jar" target-dir="src/org/apache/cordova/plugin" />	 -->
 		
 		</platform>
 	
 	<!-- <lib-file src="src/android/libs/j2mod-2.5.5.jar"/> -->
 	<!-- <lib-file src="src/android/libs/jSerialComm-2.5.1.jar"/> -->
 	<!-- <lib-file src="src/android/libs/slf4j-api-1.7.21.jar"/> -->
+	
+	<dependency	id="com.ghgande" url ="https://github.com/steveohara/j2mod.git" />
 
 </plugin>
