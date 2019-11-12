@@ -20,7 +20,7 @@
 			</feature>
 		</config-file>
 
-		<source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
+		<source-file	 src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/Modbus.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/ModbusException.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/ModbusIOException.java" target-dir="src/org/apache/cordova/plugin" />
@@ -96,7 +96,7 @@
 		<source-file src="src/android/net/AbstractModbusListener.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/net/AbstractSerialConnection.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/net/AbstractUDPTerminal.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/ModbusSerialListener.java"ModbusSerialListenertarget-dir="src/org/apache/cordova/plugin" />
+		<source-file src="src/android/net/ModbusSerialListener.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/net/ModbusTCPListener.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/net/ModbusUDPListener.java" target-dir="src/org/apache/cordova/plugin" />
 		<source-file src="src/android/net/SerialConnection.java" target-dir="src/org/apache/cordova/plugin" />
