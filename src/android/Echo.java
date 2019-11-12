@@ -21,7 +21,7 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
 		return true;
 		}
-		
+		/*
 		if (action.equals("test")){
 		try {
 			String connectionString = args.getString(0);
@@ -34,6 +34,7 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
 		return true;
 		}
+		*/
 		
         return false;
     }
