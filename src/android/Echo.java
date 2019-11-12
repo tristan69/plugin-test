@@ -21,7 +21,7 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
 		return true;
 		}
-		
+		/*
 		if (action.equals("test")){
 		try {
 			String connectionString = args.getString(0);
@@ -34,7 +34,27 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
 		return true;
 		}
-				
+		*/
+		if (action.equals("test")){
+		private static final ModbusLogger logger = ModbusLogger.getLogger(Test.class);
+		public static void main(String[] args) {
+			protected static ModbusTCPMaster master;
+				try {
+					master = new ModbusTCPMaster("1.2.3.4");
+					master.connect();
+					logger.info("Read coil 1 status [1.2.3.4:502] - %b", master.readCoils(0, 1).getBit(0));
+				}
+				catch (Exception e) {
+					logger.error("Cannot initialise tests - %s", e.getMessage());
+				}
+				finally {
+					if (master != null) {
+						master.disconnect();
+					}
+				}
+			}
+		}
+		
         return false;
     }
 }
