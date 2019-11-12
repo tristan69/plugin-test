@@ -7,8 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import src.android.libs.ModbusTCPMaster;
-import src.android.libs.j2mod-2.5.5.ModbusTCPMaster;
+import com.ghgande.j2mod.modbus.facade;
+import com.ghgande.j2mod.modbus.facade.ModbusTCPMaster;
 
 public class Echo extends CordovaPlugin {
 	
