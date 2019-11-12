@@ -32,6 +32,6 @@
 	<!-- <lib-file src="src/android/libs/jSerialComm-2.5.1.jar"/> -->
 	<!-- <lib-file src="src/android/libs/slf4j-api-1.7.21.jar"/> -->
 	
-	<dependency	id="com.ghgande" url ="https://github.com/steveohara/j2mod.git" />
+	<dependency	id="com.ghgande" url ="https://github.com/steveohara/j2mod" />
 
 </plugin>
