@@ -21,128 +21,15 @@
 		</config-file>
 
 		<source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/Modbus.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/ModbusException.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/ModbusIOException.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/ModbusSlaveException.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/facade/AbstractModbusMaster.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/facade/ModbusSerialMaster.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/facade/ModbusTCPMaster.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/facade/ModbusUDPMaster.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/AbstractModbusTransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/AbstractSerialTransportListener.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/BytesInputStream.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/BytesOutputStream.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/FastByteArrayInputStream.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/FastByteArrayOutputStream.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusASCIITransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusRTUTCPTransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusRTUTransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusSerialTransaction.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusSerialTransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusTCPTransaction.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusTCPTransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusTransaction.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusUDPTransaction.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/ModbusUDPTransport.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/io/NonWordDataHandler.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ExceptionResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/IllegalAddressExceptionResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/IllegalFunctionExceptionResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/IllegalFunctionRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/IllegalValueExceptionResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/MaskWriteRegisterRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/MaskWriteRegisterResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ModbusMessage.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ModbusMessageImpl.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ModbusRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ModbusResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadCoilsRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadCoilsResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadCommEventCounterRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadCommEventCounterResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadCommEventLogRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadCommEventLogResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadExceptionStatusRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadExceptionStatusResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadFIFOQueueRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadFIFOQueueResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadFileRecordRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadFileRecordResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadInputDiscretesRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadInputDiscretesResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadInputRegistersRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadInputRegistersResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadMEIRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadMEIResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadMultipleRegistersRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadMultipleRegistersResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadSerialDiagnosticsRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadSerialDiagnosticsResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadWriteMultipleRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReadWriteMultipleResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReportSlaveIDRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/ReportSlaveIDResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteCoilRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteCoilResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteFileRecordRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteFileRecordResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteMultipleCoilsRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteMultipleCoilsResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteMultipleRegistersRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteMultipleRegistersResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteSingleRegisterRequest.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/msg/WriteSingleRegisterResponse.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/AbstractModbusListener.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/AbstractSerialConnection.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/AbstractUDPTerminal.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/ModbusSerialListener.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/ModbusTCPListener.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/ModbusUDPListener.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/SerialConnection.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/TCPConnectionHandler.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/TCPMasterConnection.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/TCPSlaveConnection.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/UDPMasterConnection.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/UDPMasterTerminal.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/net/UDPSlaveTerminal.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/AbstractRegister.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/DefaultProcessImageFactory.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/DigitalIn.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/DigitalOut.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/FIFO.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/File.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/IllegalAddressException.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/InputRegister.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/ObservableDigitalOut.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/ObservableRegister.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/ProcessImage.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/ProcessImageFactory.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/ProcessImageImplementation.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/Record.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/Register.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/SimpleDigitalIn.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/SimpleDigitalOut.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/SimpleInputRegister.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/SimpleProcessImage.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/SimpleRegister.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/procimg/SynchronizedAbstractRegister.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/slave/ModbusSlave.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/slave/ModbusSlaveFactory.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/slave/ModbusSlaveType.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/BitVector.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/ModbusUtil.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/Observable.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/Observer.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/SerialParameters.java" target-dir="src/org/apache/cordova/plugin" />
-		<source-file src="src/android/util/ThreadPool.java" target-dir="src/org/apache/cordova/plugin" />	
-		<source-file src="src/resources/log4j.properties" target-dir="src/org/apache/cordova/plugin" />	
-				
+		<!-- <source-file src="src/resources/log4j.properties" target-dir="src/org/apache/cordova/plugin" />	 -->
+		<source-file src="src/android/libs/j2mod-2.5.5.jar" target-dir="libs" />	
+		<source-file src="src/android/libs/jSerialComm-2.5.1.jar" target-dir="libs" />	
+		<source-file src="src/android/libs/slf4j-api-1.7.21.jar" target-dir="libs" />	
 		
-	</platform>
+		</platform>
 	
-	<lib-file src="src/android/libs/j2mod-2.5.5.jar"/>
-	<lib-file src="src/android/libs/jSerialComm-2.5.1.jar"/>
-	<lib-file src="src/android/libs/slf4j-api-1.7.21.jar"/>
+	<!-- <lib-file src="src/android/libs/j2mod-2.5.5.jar"/> -->
+	<!-- <lib-file src="src/android/libs/jSerialComm-2.5.1.jar"/> -->
+	<!-- <lib-file src="src/android/libs/slf4j-api-1.7.21.jar"/> -->
 
 </plugin>
