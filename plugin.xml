@@ -20,7 +20,7 @@
 			</feature>
 		</config-file>
 
-		<source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/plugin" />
+		<source-file src="src/android/Echo.java"/>
 		
 	</platform>
 	
