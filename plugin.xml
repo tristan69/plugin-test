@@ -175,7 +175,6 @@
 		
 		<!-- <source-file src="src/android/com/ghgande/" target-dir="src/org/apache/cordova/plugin" />			 -->
 		
-		
 		<source-file src="src/android/META-INF/MANIFEST.MF" target-dir="src/org/apache/cordova/plugin" />			
 		<source-file src="src/android/META-INF/maven/com.ghgande/j2mod/pom.properties" target-dir="src/org/apache/cordova/plugin" />			
 		<source-file src="src/android/META-INF/maven/com.ghgande/j2mod/pom.xml" target-dir="src/org/apache/cordova/plugin" />			
