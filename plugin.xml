@@ -30,9 +30,9 @@
 		<source-file src="src/android/libs/jSerialComm-2.5.1.jar" target-dir="libs" />
 		<source-file src="src/android/libs/slf4j-api-1.7.21.jar" target-dir="libs" />
 		
-		<lib-file src="src/android/libs/j2mod-2.5.5.jar"/>
-		<lib-file src="src/android/libs/jSerialComm-2.5.1.jar"/>
-		<lib-file src="src/android/libs/slf4j-api-1.7.21.jar"/>
+		<!-- <lib-file src="src/android/libs/j2mod-2.5.5.jar"/> -->
+		<!-- <lib-file src="src/android/libs/jSerialComm-2.5.1.jar"/> -->
+		<!-- <lib-file src="src/android/libs/slf4j-api-1.7.21.jar"/> -->
 	</platform>
 	
 </plugin>
