@@ -1,4 +1,5 @@
 var exec = require('cordova/exec');
+var ModbusRTU = require("modbus-serial");
 
 var Echo = function () {};
 
