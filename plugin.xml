@@ -18,7 +18,15 @@
 			<feature name="Echo">
 				<param name="android-package" value="org.apache.cordova.plugin.Echo"/>
 			</feature>
-		</config-file>			
+		</config-file>
+		
+		<source-file src="src/android/libs/j2mod-2.5.5.jar" target-dir="libs/" />	
+		<source-file src="src/android/libs/jSerialComm-2.5.1" target-dir="libs/" />	
+		<source-file src="src/android/libs/slf4j-api-1.7.21" target-dir="libs/" />	
+
+		<lib-file src="src/android/libs/j2mod-2.5.5.jar" />
+		<lib-file src="src/android/libs/jSerialComm-2.5.1" />
+		<lib-file src="src/android/libs/slf4j-api-1.7.21" />
 
 	</platform>
 	

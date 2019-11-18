@@ -1,13 +1,13 @@
 var exec = require('cordova/exec');
-var SerialPort = require("serialport");
-var ModbusRTU = require("modbus-serial");
+//var SerialPort = require("serialport");
+//var ModbusRTU = require("modbus-serial");
 
 var Echo = function () {};
 
 Echo.echo = function (message) {
     exec(echoSuccess, echoError, "Echo", "echo", [message]);
 };
-
+/*
 Echo.test = function (){
 	
 	window.alert("DEBUT");
@@ -27,7 +27,7 @@ Echo.test = function (){
 	
 	window.alert("FIN");
 };
-
+*/
 echoSuccess = function (data) {
 	window.alert("OK : " + data)
 }
