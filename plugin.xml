@@ -20,13 +20,13 @@
 			</feature>
 		</config-file>
 		
-		<!-- <source-file src="src/android/libs/j2mod-2.5.5.jar" target-dir="src/android/libs/" />	 -->
-		<!-- <source-file src="src/android/libs/jSerialComm-2.5.1" target-dir="src/android/libs/" />	 -->
-		<!-- <source-file src="src/android/libs/slf4j-api-1.7.21" target-dir="src/android/libs/" />	 -->
+		<source-file src="src/android/libs/j2mod-2.5.5.jar" target-dir="src/android/libs/" />	
+		<source-file src="src/android/libs/jSerialComm-2.5.1" target-dir="src/android/libs/" />	
+		<source-file src="src/android/libs/slf4j-api-1.7.21" target-dir="src/android/libs/" />	
 
-		<lib-file src="src/android/libs/j2mod-2.5.5.jar" />
-		<lib-file src="src/android/libs/jSerialComm-2.5.1" />
-		<lib-file src="src/android/libs/slf4j-api-1.7.21" />
+		<!-- <lib-file src="src/android/libs/j2mod-2.5.5.jar" /> -->
+		<!-- <lib-file src="src/android/libs/jSerialComm-2.5.1" /> -->
+		<!-- <lib-file src="src/android/libs/slf4j-api-1.7.21" /> -->
 
 	</platform>
 	
