@@ -7,8 +7,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.ghgande.j2mod.modbus.facade.ModbusTCPMaster;
-
 public class Echo extends CordovaPlugin {
 	
 @Override
@@ -22,21 +20,7 @@ public boolean execute(String action, JSONArray args, CallbackContext callbackCo
 		}
 		return true;
 		}
-		
-		if (action.equals("test")){
-		try {
-			String connectionString = args.getString(0);
-			ModbusTCPMaster master = new ModbusTCPMaster(connectionString);
-			master.connect();
-			callbackContext.success("Connected ..");
-		}
-		catch (Exception e) {
-			callbackContext.error("Cannot connect " + e.getMessage());
-		}
-		return true;
-		}
-
-		
+				
         return false;
     }
 }
