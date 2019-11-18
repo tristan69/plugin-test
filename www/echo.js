@@ -1,7 +1,6 @@
-<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
-
 var exec = require('cordova/exec');
 var ModbusRTU = require('modbus-serial');
+var test = require('xxx');
 
 var Echo = function () {};
 
