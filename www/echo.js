@@ -1,11 +1,6 @@
 var exec = require('cordova/exec');
 var ModbusRTU = require('modbus-serial');
 
-var test1 = function (){
-var client = new ModbusRTU();
-client.connectRTU("/dev/ttyUSB0", {baudRate: 9600}, write);
-};
-
 var Echo = function () {};
 
 Echo.echo = function (message) {
@@ -15,6 +10,13 @@ Echo.echo = function (message) {
 Echo.test = function () {
 	exec(echoSuccess, echoError, "Echo", "test", [message]);
 }
+
+Echo.test1 = function (){
+	window.alert("DEBUT")
+	var client = new ModbusRTU();
+	client.connectRTU("/dev/ttyUSB0", {baudRate: 9600}, write);
+	window.alert("FIN")
+};
 
 echoSuccess = function (data) {
 	window.alert("OK : " + data)
