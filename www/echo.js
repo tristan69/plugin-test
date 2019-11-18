@@ -1,9 +1,10 @@
 var exec = require('cordova/exec');
 var ModbusRTU = require('modbus-serial');
 
+var test1 = function (){
 var client = new ModbusRTU();
-
 client.connectRTU("/dev/ttyUSB0", {baudRate: 9600}, write);
+};
 
 var Echo = function () {};
 
