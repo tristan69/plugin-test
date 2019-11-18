@@ -32,7 +32,6 @@ var socket = io("ws://127.0.0.1:3000/");
 socket.on('data', function(data){
     console.log('received:', data);
     
-    ... do something fun and interesting with data ...
 });
 
 // ask server to get registers
