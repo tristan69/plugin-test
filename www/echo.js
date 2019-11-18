@@ -6,15 +6,22 @@ Echo.echo = function (message) {
     exec(echoSuccess, echoError, "Echo", "echo", [message]);
 };
 
-Echo.test1 = function (){
+Echo.test = function (){
 	window.alert("DEBUT")
+	
+	window.alert("DEBUT require serialport")
 	var SerialPort = require("serialport");
+	window.alert("DEBUT Serialport")
 	var serialPort = new SerialPort("/dev/ttyUSB0", {baudrate: 9600, autoOpen: false});
-	// create a modbus client using the serial port
+	
+	window.alert("DEBUT require modbus serial")
 	var ModbusRTU = require("modbus-serial");
+	window.alert("DEBUT modbus serial")
 	var client = new ModbusRTU(serialPort);
-	// open connection to a serial port
+	
+	window.alert("DEBUT open")
 	client.open();
+	
 	window.alert("FIN")
 };
 
