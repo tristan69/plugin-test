@@ -9,7 +9,7 @@ Echo.echo = function (message) {
 
 Echo.test = function () {
 	exec(echoSuccess, echoError, "Echo", "test", [message]);
-}
+};
 
 Echo.test1 = function (){
 	window.alert("DEBUT")
@@ -20,11 +20,11 @@ Echo.test1 = function (){
 
 echoSuccess = function (data) {
 	window.alert("OK : " + data)
-}
+};
 
 echoError = function (data) {
 	window.alert("PAS OK : " + data)
-}
+};
 
 module.exports = Echo;
 
