@@ -1,4 +1,6 @@
 var exec = require('cordova/exec');
+var SerialPort = require("serialport");
+var ModbusRTU = require("modbus-serial");
 
 var Echo = function () {};
 
@@ -7,22 +9,23 @@ Echo.echo = function (message) {
 };
 
 Echo.test = function (){
-	window.alert("DEBUT")
 	
-	window.alert("DEBUT require serialport")
-	var SerialPort = require("serialport");
-	window.alert("DEBUT Serialport")
+	window.alert("DEBUT");
+	
+	window.alert("Serialport : " SerialPort);
+	
+	window.alert("modbusserial : " ModbusRTU);
+	
+	window.alert("DEBUT Serialport");
 	var serialPort = new SerialPort("/dev/ttyUSB0", {baudrate: 9600, autoOpen: false});
 	
-	window.alert("DEBUT require modbus serial")
-	var ModbusRTU = require("modbus-serial");
-	window.alert("DEBUT modbus serial")
+	window.alert("DEBUT modbus serial");
 	var client = new ModbusRTU(serialPort);
 	
-	window.alert("DEBUT open")
+	window.alert("DEBUT open");
 	client.open();
 	
-	window.alert("FIN")
+	window.alert("FIN");
 };
 
 echoSuccess = function (data) {
