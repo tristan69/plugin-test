@@ -1,3 +1,3 @@
 dependencies {
-    implementation files('src/android/libs/j2mod-2.5.5.jar')
+    implementation files('libs/j2mod-2.5.5.jar')
 }
