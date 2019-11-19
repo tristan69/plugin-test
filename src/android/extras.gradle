@@ -1,0 +1,3 @@
+dependencies {
+    provided files('src/android/libs/j2mod-2.5.5.jar')
+}
